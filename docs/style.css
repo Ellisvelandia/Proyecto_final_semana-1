@@ -33,16 +33,16 @@ body {
   position: absolute;
 }
 .ironman {
-  left: 52%;
+  left: 82%;
   top: 60%;
   animation-name: iron;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-iteration-count: 2;
   animation-direction: alternate-reverse;
 }
 
 .ironman img {
-  width: 200px;
+  max-width:43%;
 }
 
 /* login  */
