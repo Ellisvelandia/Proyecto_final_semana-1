@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  cursor: url(a.png), auto;
+}
+
+body {
+  font: 62.5% Open, sans-serif;
+  background-image: url(fondoaraña.jpg);
+  height: 45vh;
+  background-position: center;
+  background-position: 0px 0px;
+  animation: animatedBackground 40s linear infinite;
+}
+
+/* spider move */
+.spider {
+  margin-bottom: -20px;
+  width: 10%;
+  animation: araña 20s normal;
+  transition-duration: 8.5s;
+  transition-property: left;
+  position: relative;
+  left: 0;
+}
+
+/* ironman move */
+.ironman {
+  position: absolute;
+}
+.ironman {
+  left: 52%;
+  top: 60%;
+  animation-name: iron;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.ironman img {
+  width: 200px;
+}
+
+/* login  */
+.login-wrapper {
+  margin: -10px auto;
+  width: 325px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 7px 13px 37px #3d0101;
+}
+
+form h1 {
+  color: #dedede;
+  font-size: 2.8em;
+  font-weight: normal;
+  letter-spacing: -1px;
+  box-shadow: 7px 13px 37px #270202;
+}
+
+form h1 span {
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+form input {
+  border: none;
+  margin: 0;
+}
+
+form .input-row {
+  margin: 2em 0;
+  overflow: hidden;
+}
+
+form .icon {
+  font-size: 1.4em;
+  background: #ffffff;
+  padding: 0.8em;
+  border-left: 4px solid #660404;
+  color: #181717;
+  float: left;
+}
+form input[type="text"],
+form input[type="password"] {
+  padding: 0.8em 0.8em 0.8em 0;
+  font-size: 1.4em;
+  color: #181717;
+  width: 275px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  outline: 0;
+}
+
+form input[type="submit"] {
+  border: none;
+  background: #660404;
+  color: #ffffff;
+  font-size: 1.6em;
+  padding: 0.7em 1.2em;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+form .reset {
+  margin-left: 1em;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+
+form .reset a {
+  color: #ffffff;
+}
+
+form input[type="submit"]:hover {
+  opacity: 0.8;
+  transform: scale(1.25);
+}
+
+form .icon:hover {
+  background: #660404;
+  transform: scale(1.25);
+}
+
+.gif {
+  margin: auto;
+  width: 170px;
+}
+form h1:hover {
+  background-color: #3d0101;
+}
+
+.spider:hover {
+  left: 80%;
+  transform: scale(3.4);
+  box-shadow: #660404;
+  box-shadow: 7px 13px 37px #660404;
+  border-radius: 100%;
+}
+
+/* spiderman */
+
+@keyframes araña {
+  0% {
+    transform: translateY(-50px);
+  }
+  30% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .login-wrapper {
+    margin: 140px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .login-wrapper {
+    margin: 170px auto;
+  }
+}
+
+/* ironman */
+
+@keyframes iron {
+  0% {
+    top: 5%;
+    left: 5%;
+  }
+
+  50% {
+    top: 5%;
+    left: 55%;
+  }
+
+  100% {
+    left: 75%;
+  }
+}
